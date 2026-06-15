@@ -90,6 +90,10 @@ def relatorio_aluno(aluno):
 # ------------------------------------------------------------
 
 # >> FUNÇÃO 11: calcular_frequencia(aulas_dadas, faltas)
+def calcular_frequencia(aulas_dadas, faltas):
+    presencas = aulas_dadas - faltas
+    percentual = (presencas / aulas_dadas) * 100
+    return round(percentual, 2)
 # >> FUNÇÃO 12: situacao_final(media, frequencia)
 
 
